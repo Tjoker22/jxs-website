@@ -27,3 +27,10 @@ document.querySelectorAll('.about-card').forEach((card) => {
     card.style.transform = 'translateY(20px)';
     observer.observe(card);
 });
+
+// Mobile navigation toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
